@@ -40,7 +40,7 @@
 												<?php echo $product->name ?>
 											</td>
 											<td>
-												<?php echo $product->price ?>
+												<?php echo  number_format($product->price, 0, ',', '.') ?>
 											</td>
 											<td>
 												<img src="<?php echo base_url('upload/product/' . $product->image) ?>" width="64" />
