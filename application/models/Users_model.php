@@ -65,7 +65,6 @@ class Users_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->id = uniqid();
         $this->nik = $post["nik"];
         $this->nama_lengkap = $post["nama_lengkap"];
         $this->jenis_kelamin = $post["jenis_kelamin"];
