@@ -25,22 +25,22 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('admin/products/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('admin/products/') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 					</div>
 					<div class="card-body">
 
 						<form action="<?php base_url('admin/product/add') ?>" method="post" enctype="multipart/form-data">
 							<div class="form-group">
-								<label for="name">Name*</label>
-								<input class="form-control <?php echo form_error('name') ? 'is-invalid' : '' ?>" type="text" name="name" placeholder="Product name" />
+								<label for="name">Nama Produk</label>
+								<input class="form-control <?php echo form_error('name') ? 'is-invalid' : '' ?>" type="text" name="name" placeholder="Masukkan Nama Produk" />
 								<div class="invalid-feedback">
 									<?php echo form_error('name') ?>
 								</div>
 							</div>
 
 							<div class="form-group">
-								<label for="price">Price*</label>
-								<input class="form-control <?php echo form_error('price') ? 'is-invalid' : '' ?>" type="number" name="price" min="0" placeholder="Product price" />
+								<label for="price">Harga Produk</label>
+								<input class="form-control <?php echo form_error('price') ? 'is-invalid' : '' ?>" type="number" name="price" min="0" placeholder="Masukkan Harga Produk" />
 								<div class="invalid-feedback">
 									<?php echo form_error('price') ?>
 								</div>
@@ -48,7 +48,7 @@
 
 
 							<div class="form-group">
-								<label for="name">Photo</label>
+								<label for="name">Foto Produk</label>
 								<input class="form-control-file <?php echo form_error('price') ? 'is-invalid' : '' ?>" type="file" name="image" />
 								<div class="invalid-feedback">
 									<?php echo form_error('image') ?>
@@ -56,19 +56,17 @@
 							</div>
 
 							<div class="form-group">
-								<label for="name">Description*</label>
-								<textarea class="form-control <?php echo form_error('description') ? 'is-invalid' : '' ?>" name="description" placeholder="Product description..."></textarea>
+								<label for="name">Deskripsi Produk</label>
+								<textarea rows="10" class="form-control <?php echo form_error('description') ? 'is-invalid' : '' ?>" name="description" placeholder="Masukkan Deskripsi Produk..."></textarea>
 								<div class="invalid-feedback">
 									<?php echo form_error('description') ?>
 								</div>
 							</div>
 
-							<input class="btn btn-success" type="submit" name="btn" value="Save" />
+							<input class="btn btn-primary w-100 py-3" type="submit" name="btn" value="Tambah Data" />
 						</form>
 					</div>
-					<div class="card-footer small text-muted">
-						* required fields
-					</div>
+
 				</div>
 			</div>
 		</div>

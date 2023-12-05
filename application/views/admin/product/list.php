@@ -17,8 +17,8 @@
 			<div class="container-fluid">
 				<div class="card mb-3">
 					<div class="card-header">
-						<button class="btn btn-success">
-							<a class="text-white" href="<?php echo site_url('admin/products/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<button class="btn btn-primary">
+							<a class="text-white" href="<?php echo site_url('admin/products/add') ?>"><i class="fas fa-plus"></i> Tambah Produk</a>
 						</button>
 					</div>
 					<div class="card-body">
